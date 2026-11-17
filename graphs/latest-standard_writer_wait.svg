@@ -1,0 +1,33 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='960' height='540' viewBox='0 0 960 540'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='480' y='34' text-anchor='middle' font-family='Arial' font-size='20'>Average writer wait by reader count</text>
+<line x1='100' y1='440' x2='900' y2='440' stroke='#dddddd'/>
+<text x='88' y='445' text-anchor='end' font-family='Arial' font-size='12'>0</text>
+<line x1='100' y1='366.4' x2='900' y2='366.4' stroke='#dddddd'/>
+<text x='88' y='371.4' text-anchor='end' font-family='Arial' font-size='12'>0.134</text>
+<line x1='100' y1='292.8' x2='900' y2='292.8' stroke='#dddddd'/>
+<text x='88' y='297.8' text-anchor='end' font-family='Arial' font-size='12'>0.268</text>
+<line x1='100' y1='219.2' x2='900' y2='219.2' stroke='#dddddd'/>
+<text x='88' y='224.2' text-anchor='end' font-family='Arial' font-size='12'>0.402</text>
+<line x1='100' y1='145.6' x2='900' y2='145.6' stroke='#dddddd'/>
+<text x='88' y='150.6' text-anchor='end' font-family='Arial' font-size='12'>0.536</text>
+<line x1='100' y1='72' x2='900' y2='72' stroke='#dddddd'/>
+<text x='88' y='77' text-anchor='end' font-family='Arial' font-size='12'>0.67</text>
+<line x1='100' y1='72' x2='100' y2='440' stroke='black'/>
+<line x1='100' y1='440' x2='900' y2='440' stroke='black'/>
+<circle cx='100' cy='146.74' r='5' fill='#dc2626'/>
+<text x='100' y='464' text-anchor='middle' font-family='Arial' font-size='13'>3</text>
+<circle cx='260' cy='105.45' r='5' fill='#dc2626'/>
+<text x='260' y='464' text-anchor='middle' font-family='Arial' font-size='13'>4</text>
+<circle cx='420' cy='143.1' r='5' fill='#dc2626'/>
+<text x='420' y='464' text-anchor='middle' font-family='Arial' font-size='13'>5</text>
+<circle cx='580' cy='130.9' r='5' fill='#dc2626'/>
+<text x='580' y='464' text-anchor='middle' font-family='Arial' font-size='13'>6</text>
+<circle cx='740' cy='124.54' r='5' fill='#dc2626'/>
+<text x='740' y='464' text-anchor='middle' font-family='Arial' font-size='13'>7</text>
+<circle cx='900' cy='129.07' r='5' fill='#dc2626'/>
+<text x='900' y='464' text-anchor='middle' font-family='Arial' font-size='13'>8</text>
+<polyline points='100,146.74 260,105.45 420,143.1 580,130.9 740,124.54 900,129.07' fill='none' stroke='#dc2626' stroke-width='3'/>
+<text x='480' y='510' text-anchor='middle' font-family='Arial' font-size='14'>Number of readers</text>
+<text x='24' y='270' text-anchor='middle' transform='rotate(-90 24 270)' font-family='Arial' font-size='14'>Writer wait (ms)</text>
+</svg>

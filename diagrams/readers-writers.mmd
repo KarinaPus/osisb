@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant R1 as Reader 1
+    participant R2 as Reader 2
+    participant M as Readers mutex
+    participant S as Resource semaphore
+    participant W as Writer
+
+    R1->>M: WaitForSingleObject
+    R1->>S: First reader waits/acquires
+    Note over R1,S: Semaphore stays acquired while active_readers > 0
+    R1->>M: ReleaseMutex
+    W->>S: WaitForSingleObject (writer waits)
+    R2->>M: WaitForSingleObject
+    Note over R2,S: Joins active readers without waiting on the semaphore
+    R2->>M: ReleaseMutex
+    R1->>M: Decrement active_readers
+    R2->>M: Last reader decrements to zero
+    R2->>S: ReleaseSemaphore
+    W->>S: Acquires exclusive access
+    W->>S: ReleaseSemaphore
