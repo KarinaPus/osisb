@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": ["--mode", "standard"],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/karina/OneDrive/Desktop/5sem/osibd/lr4",
+      "program": "${workspaceFolder}/build/lab4.exe",
+      "preLaunchTask": "Build lab4",
+      "MIMode": "gdb",
+      "miDebuggerPath": "D:/C++/ucrt64/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

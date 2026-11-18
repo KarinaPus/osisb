@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+    "label": "Build lab4",
+    "type": "shell",
+    "command": "powershell",
+    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/build.ps1"],
+    "group": {"kind": "build", "isDefault": true},
+    "problemMatcher": ["$gcc"]
+  }]
+}
