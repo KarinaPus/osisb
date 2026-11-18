@@ -29,7 +29,7 @@ namespace {
 using Clock = std::chrono::steady_clock;
 
 struct Options {
-    std::string mode = "both";
+    std::string mode = "standard";
     int min_readers = 3;
     int max_readers = 8;
     int writers = 2;
@@ -72,7 +72,7 @@ void print_help() {
     std::cout
         << "Reader-priority readers-writers simulation (Windows API)\n"
         << "Options:\n"
-        << "  --mode standard|individual|both   Experiment mode (default: both)\n"
+        << "  --mode standard|individual|both   Experiment mode (default: standard)\n"
         << "  --student-id 000..999             Required for individual/both\n"
         << "  --min-readers N                   First reader count (default: 3)\n"
         << "  --max-readers N                   Last reader count (default: 8)\n"

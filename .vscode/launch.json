@@ -2,17 +2,32 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Lab4: standard (terminal)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "powershell -NoProfile -Command \"& './build/lab4.exe' --mode standard --output-dir data/run\"",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build lab4"
+    },
+    {
+      "name": "Lab4: both, ID 125 (terminal)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "powershell -NoProfile -Command \"& './build/lab4.exe' --mode both --student-id 125 --output-dir data/run\"",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build lab4"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": ["--mode", "standard"],
+      "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/karina/OneDrive/Desktop/5sem/osibd/lr4",
-      "program": "${workspaceFolder}/build/lab4.exe",
-      "preLaunchTask": "Build lab4",
+      "cwd": "c:/Users/karina/OneDrive/Desktop/5sem/osibd/lr4/src",
+      "program": "c:/Users/karina/OneDrive/Desktop/5sem/osibd/lr4/src/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "D:/C++/ucrt64/bin/gdb.exe",
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
